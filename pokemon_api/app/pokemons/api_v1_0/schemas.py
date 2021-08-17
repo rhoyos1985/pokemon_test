@@ -15,5 +15,6 @@ class PokemonSchema(ma.Schema):
     defense = fields.Integer()
     sp_attack = fields.Integer()
     sp_defense = fields.Integer()
+    speed = fields.Integer()
     generation = fields.Integer()
     legendary = fields.Boolean()

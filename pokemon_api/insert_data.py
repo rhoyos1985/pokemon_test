@@ -14,8 +14,8 @@ curs = conn.cursor()
 
 with open('pokemon.csv', newline='') as File:
     reader = csv.reader(File)
-    query = ''' INSERT INTO pokemon(name, type_1, type_2, total, hp, attack, defense, sp_attack, sp_defense, generation, legendary)
-                VALUES(?,?,?,?,?,?,?,?,?,?,?)  '''
+    query = ''' INSERT INTO pokemon(name, type_1, type_2, total, hp, attack, defense, sp_attack, sp_defense, speed, generation, legendary)
+                VALUES(?,?,?,?,?,?,?,?,?,?,?,?)  '''
 
     next(reader)
 
@@ -30,7 +30,8 @@ with open('pokemon.csv', newline='') as File:
                        row[8],
                        row[9],
                        row[10],
-                       row[11])
+                       row[11],
+                       row[12])
 
         curs.execute(query, pokemon_desc)
 

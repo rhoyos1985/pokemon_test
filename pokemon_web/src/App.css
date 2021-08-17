@@ -1,16 +1,6 @@
 .App {
+  padding-top: 36px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -26,6 +16,50 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-content {
+  margin-top: 100px;
+}
+
+.App-cursor-pointer {
+  cursor: pointer;
+}
+
+.App-pokemon-detail {
+  padding-top: 20px;
+  display: block;
+}
+
+.App-pokemon-detail span {
+  display: block;
+}
+
+.custom-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.grid-list {
+  padding: 25px;
+}
+
+.search-from-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+thead button.asc::after {
+  content: '⬇️';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.desc::after {
+  content: '⬆️';
+  display: inline-block;
+  margin-left: 1em;
 }
 
 @keyframes App-logo-spin {

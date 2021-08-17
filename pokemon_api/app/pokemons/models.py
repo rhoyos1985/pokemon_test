@@ -16,10 +16,11 @@ class Pokemon(db.Model, BaseModeMixin):
     defense = db.Column(db.Integer)
     sp_attack = db.Column(db.Integer)
     sp_defense = db.Column(db.Integer)
+    speed = db.Column(db.Integer)
     generation = db.Column(db.Integer)
     legendary = db.Column(db.Boolean)
 
-    def __init__(self, name, type_1, type_2, total, hp, attack, defense, sp_attack, sp_defense, generation, legendary):
+    def __init__(self, name, type_1, type_2, total, hp, attack, defense, sp_attack, sp_defense, speed, generation, legendary):
         self.name = attack
         self.type_1 = type_2
         self.type_2 = type_2
@@ -29,6 +30,7 @@ class Pokemon(db.Model, BaseModeMixin):
         self.defense = defense
         self.sp_attack = sp_attack
         self.sp_defense = sp_defense
+        self.speed = speed
         self.generation = generation
         self.legendary = legendary
 
