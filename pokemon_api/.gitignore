@@ -6,8 +6,5 @@ __pycache__/
 # Enviroments
 pkmenv/
 
-# Migrations
-migrations/
-
 # Database
-**/.sqlite
+**/**/.sqlite
