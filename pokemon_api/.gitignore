@@ -10,4 +10,4 @@ pkmenv/
 migrations/
 
 # Database
-**/.sqlite
+/**/*.sqlite
