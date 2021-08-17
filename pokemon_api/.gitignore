@@ -7,4 +7,8 @@ __pycache__/
 pkmenv/
 
 # Database
+<<<<<<< HEAD
 **/**/.sqlite
+=======
+/**/*.sqlite
+>>>>>>> 325ddb0
